@@ -1,13 +1,13 @@
 <!--
 Requirements
-[  ] Google Font OR Uploaded Font
-[  ] font-size OR font-style 
-[  ] Five CSS Rules
-[  ] Three Images
+[ + ] Google Font OR Uploaded Font
+[ + ] font-size OR font-style 
+[ + ] Five CSS Rules
+[ + ] Three Images
 
 Select ONE Additional Feature to Add  
 [ no ] Feature 1 - Include a Static Background Image
-[ no ] Feature 2 - Use a unique border-radius
+[ yes ] Feature 2 - Use a unique border-radius
 [ no ] Feature 3 - Use width and margin CSS Properties
 [ no ] Feature 4 - Include at least one more additional HTML page
 -->
@@ -18,13 +18,324 @@ Select ONE Additional Feature to Add
 <head>
   <title>Unit 4 Project</title>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial scale=1.0">
+  <!-- ICONSCOUT CDN -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+  <title>Art Gallery</title>
+  
   <style>
+    * {
+      margin:20;
+      padding:0;
+      list-style:none;
+      box-sizing:border-box;
+    }
+    
+    :root {
+      color-body-bg: #d8dae2;
+      color-white: #fff;
+      color-light: #eff0f1;
+      color-dark: #12122e;
+      --transition: all 300ms ease;
+    }
+    h2 {
+      color:white
+     
+    }
+    
+    h3 {
+      background-color:white;
+      text-align: center;
+    }
+    
+    body{
+      background: url("https://pbs.twimg.com/media/F3xKwHgWYAAU7pZ?format=jpg&name=large");
+      display:grid;
+      place-items: center;
+      height:100vh;
+      width: 100vw;
+      font-family:"poppins", sans-serif;
+      font-size: 1.5rem;
+      color:black;
+    }
+    
+    img {
+      display:block;
+      width: 100%
+      object-fit: cover;
+      
+    }
+    
+    main{
+      background:
+      width:70%
+      padding: 3rem;
+      border-radius:1rem;
+    }
+    
+    .categories {
+      display:flex;
+      gap:0.7rem;
+      margin:2rem 1 3rem;
+      flex-wrap: wrap;
+    }
+    
+    .category {
+      background:#F5F5FA;
+      padding:0.4rem 1rem;
+      border-radius:0.5rem;
+      font-size:1.2rem;
+      opacity: 0.75; 
+    }
+    
+    .gallery {
+      display:flex;
+      flex-wrap:nowrap;
+      flex-direction:column;
+      gap:1rem;
+      background:#D4D4D9;
+      padding:1rem;
+      border: 4px solid transparent;
+      border-radius:3%
+    }
+    
+    
+    .column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+    
+  .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+    
+    .row {
+  display: flex;
+}
 
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+    ion-icon{
+      color:white;
+      font-size:35px;
+    }
+  
   </style>
 </head>
 <body>
+<main>
+  <h2>
+    Art Portfolio
+  </h2>
+  
+  <ul class="categories">
+    <li><a class="category" href="#?">Splash Art</a></li>
+    <li><a class="category" href="#!">Storyboards</a></li>
+    <li><a class="category" href="#&">Concept Work</a></li>
+    <li><a class="category" href="#$">Graphite Work</a></li>
+  </ul>
+  <a href="https://www.instagram.com/n0vi.1/?hl=en" target="_blank">
+  <ion-icon name="logo-instagram"></ion-icon>
+  </a>
+    <a href="https://x.com/novic_0/media" target="_blank">
+  <ion-icon name="logo-twitter"></ion-icon>
+  </a>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
- 
+  <section class="galleries">
+  <article class="gallery">
+  <h3 id="?">Splash Art</h3>
+  <div class="gallery_images">
+  <div class="row">
+  <div class="column">
+    <img src="https://pbs.twimg.com/media/GS3jdrZWEAAaVnI?format=jpg&name=large" alt="one" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://pbs.twimg.com/media/GZ-NrBsX0AAjwMh?format=jpg&name=large" alt="two" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://pbs.twimg.com/media/GEooLbQXQAAfVKo?format=jpg&name=large" alt="three" style="width:100%">
+  </div>
+</div>
+  <div class="row">
+  <div class="column">
+    <img src="https://pbs.twimg.com/media/F9noqarXUAA6tT9?format=jpg&name=large" alt="one" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://pbs.twimg.com/media/GHJGl17XMAAeqV2?format=jpg&name=large" alt="two" style="width:100%">
+  </div>
+    </div>
+     <div class="row">
+  <div class="column">
+    <img src="https://pbs.twimg.com/media/GURWMhUWcAAVYbr?format=jpg&name=large" alt="two" style="width:100%">
+  </div>
+    <div class="column">
+    <img src="https://pbs.twimg.com/media/GWCBKs-WUAEn24G?format=jpg&name=large" alt="one" style="width:82%">
+  </div>
+    </div>
+      <div class="row">
+  <div class="column">
+    <img src="https://pbs.twimg.com/media/GGHH4RZWMAATznF?format=jpg&name=large" alt="one" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://pbs.twimg.com/media/F3xKwHgWYAAU7pZ?format=jpg&name=large" alt="two" style="width:100%">
+  </div>
+    </div>
+    </div>
+  </article>
+  
+   <article class="gallery">
+  <h3 id="!">Storyboards</h3>
+  <div class="gallery_images">
+  <div class="row">
+  <div class="column">
+    <img src="https://pbs.twimg.com/media/GGvPi_lWwAA_pCt?format=jpg&name=large" alt="one" style="width:100%">
+  </div>
+    <div class="column">
+    <img src="https://pbs.twimg.com/media/GaVso_wXAAAhmlG?format=jpg&name=large" alt="one" style="width:95%">
+  </div>
+</div>
+  <div class="row">
+  <div class="column">
+    <img src="https://pbs.twimg.com/media/F8cnk1_WoAAZxey?format=jpg&name=large" alt="one" style="width:100%">
+  </div>
+    <div class="column">
+    <img src="https://pbs.twimg.com/media/GG4otyWWcAAIHnO?format=jpg&name=large" alt="one" style="width:95%">
+  </div>
+    <div class="column">
+    <img src="https://pbs.twimg.com/media/GSGEWoGa4AAJvs5?format=jpg&name=large" alt="one" style="width:95%">
+  </div>
+</div>
+    <div class="row">
+  <div class="column">
+    <img src="https://mail.google.com/mail/u/0?ui=2&ik=84032e568f&attid=0.6&permmsgid=msg-a:r-4292555888957786215&th=192fa69b2a51097e&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ_Gf0ZVpyDjxjAHvrDlUtgYVBAFJT6QJZN8MEFmPmMRGNoi6pwXj_pyPSmKJQbcYQRYwGu5YQDnGf4aKF-fQntkqisHj0eZQIggeQFZ5lyonHbMFgtkR5Hj-vg&disp=emb&realattid=192fa69759cef8f95915" alt="one" style="width:100%">
+  </div>
+    <div class="column">
+    <img src="https://mail.google.com/mail/u/0?ui=2&ik=84032e568f&attid=0.1&permmsgid=msg-a:r-4292555888957786215&th=192fa69b2a51097e&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ-rrG1J8KlFlZsNTIXzGM0GeCkApRsfIEOcQSzmFiGlYv95eQas7gFqj5BC2dF9exexJ29bMeqanDRVYNe_484FQ-__tJa6ZAtmcWfpiA2sqi5ukSU0FwfLSXg&disp=emb&realattid=192fa69a23c941b65f26" alt="one" style="width:52%">
+  </div>
+</div>
+    </div>
+  </article>
+  
+  <article class="gallery">
+  <h3 id="&">Concept Work</h3>
+  <div class="gallery_images">
+    <div class="row">
+  <div class="column">
+    <img src="https://mail.google.com/mail/u/0?ui=2&ik=84032e568f&attid=0.2&permmsgid=msg-a:r-4292555888957786215&th=192fa69b2a51097e&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ_y87kGAn1QjRDLj7_JAyrW5ewTfNrwWsqwKCS6iYKxnbkThswQKQIMIQQRDwmHZMXmUlvKZqp4rOrQi401FBjfiFS3ZhZ8V0rifFJwCf7VbtXDkmV8t86Gwng&disp=emb&realattid=192fa67b74514e95be71" alt="one" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://mail.google.com/mail/u/0?ui=2&ik=84032e568f&attid=0.3&permmsgid=msg-a:r-4292555888957786215&th=192fa69b2a51097e&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ_wF6zNeoew320QaJzq6mpMwGejlRXAGamGdh0HS5XUblfh8BdD3tdxuhT8sAoqTIbwAmeD98lM4ZND4Hd73My657c9a1V3o3t6yXTwLTlMOrJaeJO10zbreAA&disp=emb&realattid=192fa6807684e193fea2" alt="two" style="width:54%">
+  </div>
+    </div>
+    <div class="row">
+  <div class="column">
+    <img src="https://pbs.twimg.com/media/GGvPw7xXcAAaBeR?format=jpg&name=large" alt="one" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://pbs.twimg.com/media/GGvPw7zWAAAIdyA?format=jpg&name=large" alt="two" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://pbs.twimg.com/media/GSGEWnXWwAACptS?format=jpg&name=large" alt="three" style="width:90%">
+  </div>
+    </div>
+    <div class="row">
+  <div class="column">
+    <img src="https://pbs.twimg.com/media/GSGEWnaW4AAzrrA?format=jpg&name=large" alt="one" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://pbs.twimg.com/media/GSGEWoBaUAA9ZHP?format=jpg&name=large" alt="two" style="width:100%">
+  </div>
+    </div>
+  <div class="row">
+  <div class="column">
+    <img src="https://pbs.twimg.com/media/GGvPw7uXYAA7GCo?format=jpg&name=large" alt="one" style="width:100%">
+  </div>
+      <div class="column">
+    <img src="https://pbs.twimg.com/media/F8NAa_6XwAAUO_9?format=jpg&name=large" alt="one" style="width:100%">
+  </div>
+</div>
+      <div class="row">
+  <div class="column">
+    <img src="https://pbs.twimg.com/media/GKwLoh9XEAADU7h?format=jpg&name=large" alt="one" style="width:100%">
+  </div>
+       <div class="column">
+    <img src="https://pbs.twimg.com/media/F8NAa_4WAAA0sex?format=jpg&name=large" alt="one" style="width:100%">
+  </div> 
+        <div class="column">
+    <img src="https://mail.google.com/mail/u/0?ui=2&ik=84032e568f&attid=0.1&permmsgid=msg-a:r-3952489353062828821&th=192fa859c0985eaf&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ-PqHDYC-_-wP0EJ0ZrVAC2ZuPI2-SWA-taRM6smltDiWoidKMwjDdkV7bPCoAi_2A3IFtfDZVbsJ3q90NDjretYgkNYFRN6xZoCSoglLZsnsfDVGoL1Zkg2QI&disp=emb&realattid=192fa859480b41cf6ef1" alt="two" style="width:70%">
+  </div>
+    </div>
+    
+     <article class="gallery">
+  <h3 id="$">Sketch Work</h3>
+  <div class="gallery_images">
+  <div class="row">
+  <div class="column">
+    <img src="https://mail.google.com/mail/u/0?ui=2&ik=84032e568f&attid=0.1&permmsgid=msg-a:r-5542739062026741471&th=192fa3aa3848a7e3&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ9TXCsqrKKHMfMkZvy6o8CamumDE_oFcylJc4faQswu4HwQ3Vz7_vKibneQNKWVvxGVknvClqRMTTHqcyLzLAsi2MQF5Rq1BS5clqwJspaIEzZxegPJXtjjos0&disp=emb&realattid=192fa39fa996972d1ee9" alt="one" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://mail.google.com/mail/u/0?ui=2&ik=84032e568f&attid=0.6&permmsgid=msg-a:r-5542739062026741471&th=192fa3aa3848a7e3&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ_f552E5llchqdFGIFJWTZH7OzfY2jpsIu7Q0MmGrdl6_20qSgeAgUbKt0NAzDolTWfUcq-QRJ1Wfx72sp1GmONGptPTWzPYpxUfo_-aC4ZpEI9Djz1L7RD_a8&disp=emb&realattid=192fa3a2bfaea7bfef6a" alt="two" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://mail.google.com/mail/u/0?ui=2&ik=84032e568f&attid=0.10&permmsgid=msg-a:r-5542739062026741471&th=192fa3aa3848a7e3&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ8O8-4ARxSGMH2ubwerL1a4hEnNrj1FFmS4ynoks6GmMVlzxq0FyPaHwGB_U9-a-1ghzi4qQ2WyS9Xg_eRCUgVuNeZfz-xPz0YO8J-vJvG3DIQz9UaFoJhyRk4&disp=emb&realattid=192fa3a3ef69fd1d9f5b" alt="three" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://mail.google.com/mail/u/0?ui=2&ik=84032e568f&attid=0.7&permmsgid=msg-a:r-5542739062026741471&th=192fa3aa3848a7e3&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ90ccZ5c_Xh2bqSGxiqKQWlvlEkK92nQ9UVOyxG8DInHwEMZiZgf98P-khQw5omW6URBjGDnvNE-gnKC2E5FNA4vQZazuqQYoicmcfZJwtdiEEhNw_fvJ55i98&disp=emb&realattid=192fa2455373f4fd7ee1" alt="three" style="width:100%">
+  </div>
+</div>
+  <div class="row">
+  <div class="column">
+    <img src="https://mail.google.com/mail/u/0?ui=2&ik=84032e568f&attid=0.8&permmsgid=msg-a:r-5542739062026741471&th=192fa3aa3848a7e3&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ9u9VFLOWS6iOpiP2mRi4ZyZOZTL2SlEpDnXS3X1dlcJzpDgg4eUDTD6-mEvXrrbf6zNIERNxfS6UpkD-36H_3kvT_a2RVGXGYZNx52BmVgg-uwVLEDNEMupc0&disp=emb&realattid=192fa3a7e7711b24ef8c" alt="one" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://mail.google.com/mail/u/0?ui=2&ik=84032e568f&attid=0.5&permmsgid=msg-a:r-5542739062026741471&th=192fa3aa3848a7e3&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ9wOfIFk6ogU0g_lmOTetBwL67E5p3alDyrFfdPUhXLOleZzWEs54y3dOj2KLDdUBt506zLWstrHIVfJH0yPoPdJxCPIyAn4AcrtQc-uvpvjushcw-t-2Mn0H8&disp=emb&realattid=192fa39c7cf6c39becc7" alt="two" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://mail.google.com/mail/u/0?ui=2&ik=84032e568f&attid=0.9&permmsgid=msg-a:r-5542739062026741471&th=192fa3aa3848a7e3&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ_d75UNAWEvkjWmr2rc9cf0UAat0oYvGOsMWD-5E7t_u9hBwpadHOxZhoaIxqpB74KNeWCMhXtzOot8Y26fMFG53jw_2ksLIIIKo_pyz0s4Xzu2vT2mIQt7fBQ&disp=emb&realattid=192fa39a218caabf2876" alt="three" style="width:90%">
+  </div> 
+     <div class="column">
+    <img src="https://mail.google.com/mail/u/0?ui=2&ik=84032e568f&attid=0.12&permmsgid=msg-a:r-5542739062026741471&th=192fa3aa3848a7e3&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ8G35rCnXB1De3EUgYzcRr2DbVsrRCNd2f_TF2wOc9eQjufy7ZtjcNwXEDhvuZkuLJ3FFv0hcftmrl147pcOW2j20n-lVe5Oe0H1DP3KQd1BXpidSgBYDFYR54&disp=emb&realattid=192fa391a6afbda71f22" alt="three" style="width:90%">
+  </div> 
+  </div>
+  <div class="row">
+  <div class="column">
+    <img src="https://mail.google.com/mail/u/0?ui=2&ik=84032e568f&attid=0.13&permmsgid=msg-a:r-5542739062026741471&th=192fa3aa3848a7e3&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ_sd7ihSbukbfpBGcJ1VhHD21zhKoLWVqriownrnDG2mWvF-_oRJKtYRLc9mcoAXbb6JtVsQ-ljBUSZmVoYou_ehBHZsq1URoYmxCRJD6_zLPd8AZuTbszadcU&disp=emb&realattid=192fa397bc94b8420f55" alt="one" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://mail.google.com/mail/u/0?ui=2&ik=84032e568f&attid=0.4&permmsgid=msg-a:r-5542739062026741471&th=192fa3aa3848a7e3&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ94CnHKTfN7JP5LFw0CROEefyIYiomR3pNXLMuVQdV3t2yfV94O3R9CYSqrUATVyo3MYiCgncOuH8lMwAjfiz4_RvNvQ_DO0-ix6ryxC9pcZDs-SkifID0wxS4&disp=emb&realattid=192fa395b0b78ba42f14" alt="two" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://mail.google.com/mail/u/0?ui=2&ik=84032e568f&attid=0.2&permmsgid=msg-a:r-5542739062026741471&th=192fa3aa3848a7e3&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ8YCiMy5qH2CFORBL321g_2NX5qqDc_t6jI4QMs9PpvyBxrHa1CGWJJnXsvcFRuX6AJIVQqFQIOUvz53GyKlOExltcul686ouwE2snHmHbv5hnWt7s0bQKAxpI&disp=emb&realattid=192fa38f85158b8b1f41" alt="three" style="width:90%">
+  </div> 
+  <div class="column">
+    <img src="https://mail.google.com/mail/u/0?ui=2&ik=84032e568f&attid=0.11&permmsgid=msg-a:r-5542739062026741471&th=192fa3aa3848a7e3&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ8yVQjjDkoMZQr_SVvVtfU8l8ar-EH1eCTQu71koHHoKYVjTU-Z8WFvPeEE0Yz95AV17SjuSjvyR80fCSli8Upj0MvaTzoj9KPAWrCkh9_hgZH3S9jKBRW-NP0&disp=emb&realattid=192fa394723b1304cf13" alt="three" style="width:90%">
+  </div> 
+    </div>
+  <div class="row">
+  <div class="column">
+    <img src="https://mail.google.com/mail/u/0?ui=2&ik=84032e568f&attid=0.4&permmsgid=msg-a:r-4292555888957786215&th=192fa69b2a51097e&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ_B-ShAR-VmZeWQWOpVbI0BBH_mN2Uu-zUBY3n29QHOwEKPTlHL6dFPZssElG4RF32zpGA7WlKdmJzc-DYha56kRnKwM-LQ4MF4Bstiyymz9cEwT2O7Yt4CNiU&disp=emb&realattid=192fa68468296006bf23" alt="one" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://mail.google.com/mail/u/0?ui=2&ik=84032e568f&attid=0.5&permmsgid=msg-a:r-4292555888957786215&th=192fa69b2a51097e&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ9XS1NFS1GBFYxAz7PW6X69497a_oPgWSKG4_VhGkjk1LddmrQGl-MeO55ugNozEEbxqxflwTFVSFVistc8SrwhnEbn-qCnSFLfZNcPieA0Ka7O6B_DzDaaD1U&disp=emb&realattid=192fa68ab18307ad0f54" alt="two" style="width:100%">
+  </div>
+    </div>
+    </div>
+  </article>
+    </div>
+  </article>
+    
+
+   
+   
+  </section>
+  </main>
 
 </body>
 </html>
